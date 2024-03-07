@@ -1,0 +1,118 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-bar {
+    background-image: url('home-images/blue_bar.png');
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: black; /* Adjust color to match design */
+}
+
+.auth-button {
+    padding: 8px 16px;
+    background-color: #f0f0f0; /* Adjust background and text colors as needed */
+    border: none;
+    cursor: pointer;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px; /* Adjust the padding as needed */
+    background-color: #F0F0F0; /* Assuming a light background */
+}
+
+.earth-and-bee {
+    position: relative;
+    flex-basis: 50%; /* Adjust based on your layout */
+}
+
+.earth-img {
+    width: 100%; /* Adjust size based on container or fixed width as needed */
+    max-width: 500px; /* Prevent the image from becoming too large */
+    display: block;
+    margin: 0 auto; /* Center the earth image horizontally */
+}
+
+.bee-path {
+    position: absolute;
+    right: 20%; /* Adjust according to the bee's path starting point */
+    top: 20%; /* Adjust according to the bee's path starting point */
+    width: 60px; /* Adjust the size as needed */
+}
+
+.bee {
+    position: absolute;
+    right: 15%; /* Adjust for correct positioning near the path end */
+    top: 15%; /* Adjust for correct positioning near the path end */
+    width: 40px; /* Adjust the size as needed */
+}
+
+.hero-text {
+    flex-basis: 50%; /* Adjust based on your layout */
+    padding-left: 50px; /* Add some space between the text and the earth image */
+    text-align: center;
+    font-size: larger;
+}
+
+.hero-text h1 {
+    color: #333; /* Update color as needed */
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+}
+
+.hero-text button {
+    background-color: #4CAF50; /* Example primary button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px; /* Adjust as needed */
+    border-radius: 5px; /* Optional: adds rounded corners */
+}
+
+
+.checklist-map-placeholder {
+    background-color: lightblue; /* Placeholder styling */
+    height: 400px; /* Adjust as needed */
+    text-align: center;
+}
+
+.bottom-img {
+    width: 100%;
+    display: block;
+}
+
+.footer-content {
+    background-image: url('home-images/blue_bar.png');
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+/* Ensure additional responsive styling and fine-tuning as needed */
