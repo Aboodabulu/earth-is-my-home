@@ -53,8 +53,9 @@ body, html {
     justify-content: space-around;
     text-align: left;
     margin-bottom: 100px;
+  
 }
-
+/* 
 .earth-and-bee {
     position: relative;
     width: 50%;
@@ -74,10 +75,82 @@ body, html {
     background-image: url('home-images/flat_bee.png');
     background-size: contain;
     background-repeat: no-repeat;
+} */
+
+/* .earth{
+    background-image: url('./home-images/flat_earth.png');
+    background-position-x: center;
+} */
+
+.bee-path{
+    background-image: url('./home-images/bee_path.png');
 }
 
+.bee{
+    background-image: url('./home-images/flat_bee.png');
+    width: 11rem;
+    position: absolute;
+    right: 0;
+    top: 114px;
+}
+
+/* .image{
+    width: 30%;
+    height: auto;
+    background-size: cover;
+} */
+.image{
+   position: relative;
+    /* border: solid red; */
+    /* flex: 1 0 0; */
+    width: 500px;
+    height: 500px;
+}
+
+.image::before {
+    content: url('./home-images/bee_path.png');
+    display: block;
+    position: absolute;
+    top: -100px;
+    left: 420px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transform: rotate(-15deg);
+}
+.image::after {
+    content: url('./home-images/flat_bee.png');
+    display: block;
+    position: absolute;
+    top: -200px;
+    left: 1085px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transform: rotate(-15deg);
+}
+.image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.hero-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 92%; */
+    margin: 5rem;
+    /* height: 40vh; */
+    /* border: solid; */
+    max-width: 1500px;
+}
 .hero-text {
-    margin-top: 200px;
+    margin-top: 100px;
     flex-basis: 50%; 
     padding: 70px; 
     text-align: center;
@@ -88,13 +161,15 @@ body, html {
     color: #333;
     margin-bottom: 20px;
     color: #255564;
-    font-size: 1.8em;
+    font-size: 64px;
+    font-weight: 800;
 }
 
 .hero-text p {
     margin-bottom: 20px;
     height: 300%;
-    font-size: 1.6em;
+    font-size: 24px;
+    font-weight: 500;
     line-height: 1.5em;
 }
 
