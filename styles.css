@@ -13,6 +13,7 @@ body, html {
 }
 
 .site-header {
+    background-image: url('home-images/paper_bar.png');
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,14 +31,14 @@ body, html {
 
 .main-nav ul li a {
     text-decoration: none;
-    color: black; /* Adjust color to match design */
+    color: black; 
 }
 
 .auth-button {
     padding: 8px 20px;
     width: 180px;
     height: 30px;
-    background-color: #CBE5A8; /* Adjust background and text colors as needed */
+    background-color: #CBE5A8; 
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -48,48 +49,43 @@ body, html {
 
 .hero-section {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    padding: 50px; /* Adjust the padding as needed */
-    background-color: #F0F0F0; /* Assuming a light background */
+    justify-content: space-around;
+    text-align: left;
+    margin-bottom: 100px;
 }
 
 .earth-and-bee {
     position: relative;
-    flex-basis: 50%; /* Adjust based on your layout */
-}
-
-.earth-img {
-    width: 100%; /* Adjust size based on container or fixed width as needed */
-    max-width: 500px; /* Prevent the image from becoming too large */
-    display: block;
-    margin: 0 auto; /* Center the earth image horizontally */
-}
-
-.bee-path {
-    position: absolute;
-    right: 20%; /* Adjust according to the bee's path starting point */
-    top: 20%; /* Adjust according to the bee's path starting point */
-    width: 60px; /* Adjust the size as needed */
+    width: 50%;
+    height: 500px;
+    background-image: url('home-images/flat_earth.png'), url('home-images/bee_path.png');
+    background-position: center center, left 400px top 20px; 
+    background-size: contain, 750px auto; 
+    background-repeat: no-repeat;
 }
 
 .bee {
     position: absolute;
-    right: 15%; /* Adjust for correct positioning near the path end */
-    top: 15%; /* Adjust for correct positioning near the path end */
-    width: 40px; /* Adjust the size as needed */
+    right: 10px;
+    top: 70px;
+    width: 60px; 
+    height: 60px; 
+    background-image: url('home-images/flat_bee.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .hero-text {
-    flex-basis: 50%; /* Adjust based on your layout */
-    padding-left: 50px; /* Add some space between the text and the earth image */
+    margin-top: 200px;
+    flex-basis: 50%; 
+    padding: 70px; 
     text-align: center;
     color: #255564;
 }
 
 .hero-text h1 {
-    color: #333; /* Update color as needed */
+    color: #333;
     margin-bottom: 20px;
     color: #255564;
     font-size: 1.8em;
@@ -103,37 +99,38 @@ body, html {
 }
 
 .hero-text button {
-    background-color: #255564; /* Example primary button color */
+    background-color: #255564;
     width: 283px;
     height: 68px;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    font-size: 24px; /* Adjust as needed */
-    border-radius: 5px; /* Optional: adds rounded corners */
+    font-size: 24px;
+    border-radius: 5px; 
 }
 
 .options-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Creates two columns */
-    gap: 20px; /* Space between grid items */
-    padding: 20px;
-    background-color: #f0f0f0; /* Adjust the background color as needed */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    padding: 10px; 
+    background-color: #f0f0f0; 
 }
 
 .option {
-    background-color: #a8dadc; /* Light green background */
-    color: #1d3557; /* Dark text color for contrast */
+    background-color: #CBE5A8; 
+    color: #1d3557; 
     text-align: center;
-    padding: 20px;
+    padding: 40px; 
     font-size: 1.2rem;
     cursor: pointer;
-    border-radius: 8px; /* Soften the corners */
+    border-radius: 8px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 150px; /* Fixed height for uniformity */
+    height: auto; 
+    min-height: 200px; 
 }
 
 .option strong {
@@ -143,9 +140,10 @@ body, html {
 
 
 
+
 .checklist-map-placeholder {
-    background-color: lightblue; /* Placeholder styling */
-    height: 400px; /* Adjust as needed */
+    background-color: lightblue; 
+    height: 400px; 
     text-align: center;
 }
 
@@ -155,11 +153,12 @@ body, html {
 }
 
 .site-footer {
+    background-image: url('home-images/paper_bar.png');
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    margin-bottom: 20px;
+    margin-bottom: none;
 }
 
 .footer-content {
@@ -168,4 +167,3 @@ body, html {
     display: flex;
     justify-content: flex-end;
 }
-/* Ensure additional responsive styling and fine-tuning as needed */
