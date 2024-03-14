@@ -3,11 +3,12 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     background-color: #f0f0f0;
+    font-family: 'Urbanist';
 }
 
 .top-bar {
     background-image: url('home-images/blue_bar.png');
-    padding: 10px 20px;
+    padding: 0px 10px;
     display: flex;
     justify-content: flex-end;
 }
@@ -18,8 +19,9 @@ body, html {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    margin-bottom: 20px;
-    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, .2);
+    margin-bottom: 0px;
+    font-weight: 800;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .2);
 }
 
 .main-nav ul {
@@ -38,7 +40,8 @@ body, html {
     padding: 8px 20px;
     width: 180px;
     height: 30px;
-    background-color: #CBE5A8; 
+    background-color: #CBE5A8;
+    font-weight: 700;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -53,34 +56,7 @@ body, html {
     justify-content: space-around;
     text-align: left;
     margin-bottom: 100px;
-  
 }
-/* 
-.earth-and-bee {
-    position: relative;
-    width: 50%;
-    height: 500px;
-    background-image: url('home-images/flat_earth.png'), url('home-images/bee_path.png');
-    background-position: center center, left 400px top 20px; 
-    background-size: contain, 750px auto; 
-    background-repeat: no-repeat;
-}
-
-.bee {
-    position: absolute;
-    right: 10px;
-    top: 70px;
-    width: 60px; 
-    height: 60px; 
-    background-image: url('home-images/flat_bee.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-} */
-
-/* .earth{
-    background-image: url('./home-images/flat_earth.png');
-    background-position-x: center;
-} */
 
 .bee-path{
     background-image: url('./home-images/bee_path.png');
@@ -94,15 +70,8 @@ body, html {
     top: 114px;
 }
 
-/* .image{
-    width: 30%;
-    height: auto;
-    background-size: cover;
-} */
 .image{
    position: relative;
-    /* border: solid red; */
-    /* flex: 1 0 0; */
     width: 500px;
     height: 500px;
 }
@@ -136,7 +105,6 @@ body, html {
     width: 100%;
     height: 100%;
 }
-
 
 .hero-container{
     position: relative;
@@ -178,11 +146,13 @@ body, html {
     width: 283px;
     height: 68px;
     color: white;
+    font-weight: 700;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 24px;
     border-radius: 5px; 
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
 }
 
 .options-section {
@@ -198,7 +168,7 @@ body, html {
     color: #1d3557; 
     text-align: center;
     padding: 40px; 
-    font-size: 1.2rem;
+    font-size: 32px;
     cursor: pointer;
     border-radius: 8px; 
     display: flex;
@@ -208,13 +178,15 @@ body, html {
     min-height: 200px; 
 }
 
+span {
+    font-size: 40px;
+    font-weight: 600;
+}
+
 .option strong {
     font-weight: bold;
     font-size: 1.5rem;
 }
-
-
-
 
 .checklist-map-placeholder {
     background-color: lightblue; 
@@ -232,13 +204,14 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: 800;
     padding: 10px 20px;
     margin-bottom: none;
 }
 
 .footer-content {
     background-image: url('home-images/blue_bar.png');
-    padding: 10px 20px;
+    padding: 0px 10px;
     display: flex;
     justify-content: flex-end;
 }
