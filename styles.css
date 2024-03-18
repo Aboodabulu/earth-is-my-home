@@ -33,7 +33,7 @@ body, html {
 
 .main-nav ul li a {
     text-decoration: none;
-    color: black; 
+    color: #0B2B38; 
 }
 
 .auth-button {
@@ -112,7 +112,7 @@ body, html {
     justify-content: space-between;
     align-items: center;
     /* width: 92%; */
-    margin: 5rem;
+    margin: 1.1rem;
     /* height: 40vh; */
     /* border: solid; */
     max-width: 1500px;
@@ -188,10 +188,12 @@ span {
     font-size: 1.5rem;
 }
 
-.checklist-map-placeholder {
-    background-color: lightblue; 
+#map {
     height: 400px; 
-    text-align: center;
+    margin-top: 100px;
+    margin-bottom: none;
+    width: 100%;
+    height: auto;
 }
 
 .bottom-img {
